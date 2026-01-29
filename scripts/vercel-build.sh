@@ -49,6 +49,6 @@ else
     hugo --source "$ROOT_DIR/exampleSite" --destination "$HUGO_DEST"
 fi
 
-  OUTPUT_DIR="${VERCEL_OUTPUT_DIR:-$ROOT_DIR/.vercel/output}"
+  OUTPUT_DIR="${VERCEL_OUTPUT_DIR:-/vercel/output}"
   mkdir -p "$OUTPUT_DIR/static"
   cp -a "$HUGO_DEST/." "$OUTPUT_DIR/static/"
