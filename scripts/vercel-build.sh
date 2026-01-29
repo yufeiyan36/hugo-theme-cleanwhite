@@ -5,6 +5,10 @@ set -x
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 THEME_DIR="$ROOT_DIR/exampleSite/themes/hugo-theme-cleanwhite"
 
+if [[ -L "$THEME_DIR" ]]; then
+  rm -f "$THEME_DIR"
+fi
+
 mkdir -p "$THEME_DIR"
 
 copy_dir() {
