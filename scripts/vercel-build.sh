@@ -57,7 +57,10 @@ cat > "$OUTPUT_DIR/config.json" <<'EOF'
 {
   "version": 3,
   "routes": [
-    { "handle": "filesystem" }
+    { "handle": "filesystem" },
+    { "src": "/$", "dest": "/index.html" },
+    { "src": "/(.*)/$", "dest": "/$1/index.html" },
+    { "src": "/(.*)", "dest": "/$1/index.html" }
   ]
 }
 EOF
