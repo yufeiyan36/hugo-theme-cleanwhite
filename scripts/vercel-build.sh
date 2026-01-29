@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
+set -x
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 THEME_DIR="$ROOT_DIR/exampleSite/themes/hugo-theme-cleanwhite"
@@ -26,4 +27,5 @@ if [[ -f "$ROOT_DIR/theme.toml" ]]; then
   cp -a "$ROOT_DIR/theme.toml" "$THEME_DIR/"
 fi
 
+hugo version
 hugo --source "$ROOT_DIR/exampleSite" --destination "$ROOT_DIR/exampleSite/public"
