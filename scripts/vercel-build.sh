@@ -32,4 +32,13 @@ if [[ -f "$ROOT_DIR/theme.toml" ]]; then
 fi
 
 hugo version
-hugo --source "$ROOT_DIR/exampleSite" --destination "$ROOT_DIR/exampleSite/public"
+BASEURL=""
+if [[ -n "${VERCEL_URL:-}" ]]; then
+  BASEURL="https://${VERCEL_URL}"
+fi
+
+if [[ -n "$BASEURL" ]]; then
+  hugo --source "$ROOT_DIR/exampleSite" --destination "$ROOT_DIR/exampleSite/public" --baseURL "$BASEURL"
+else
+  hugo --source "$ROOT_DIR/exampleSite" --destination "$ROOT_DIR/exampleSite/public"
+fi
