@@ -52,3 +52,12 @@ fi
   OUTPUT_DIR="${VERCEL_OUTPUT_DIR:-/vercel/output}"
   mkdir -p "$OUTPUT_DIR/static"
   cp -a "$HUGO_DEST/." "$OUTPUT_DIR/static/"
+
+  cat > "$OUTPUT_DIR/config.json" <<'EOF'
+  {
+    "version": 3,
+    "routes": [
+      { "handle": "filesystem" }
+    ]
+  }
+  EOF
