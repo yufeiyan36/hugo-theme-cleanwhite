@@ -64,6 +64,15 @@ Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your b
 
 If you start from scratch, there is a working Hugo site configured with the CleanWhite theme in the [exampleSite](/exampleSite/) directory.  You can use it as a starting point for your site.
 
+### Deploy to GitHub Pages (project site)
+
+This repo is configured to publish the example site to GitHub Pages via a GitHub Actions workflow.
+
+1. Push to the master branch.
+2. In GitHub, go to Settings → Pages, and set Source to the gh-pages branch (root).
+3. Your site will be available at:
+  https://yufeiyan36.github.io/hugo-theme-cleanwhite/
+
 For more information read the official [quick start guide](https://gohugo.io/getting-started/quick-start/) of Hugo.
 
 ## Configuration

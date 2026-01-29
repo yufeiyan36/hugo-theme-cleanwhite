@@ -159,6 +159,13 @@ h6 {
   line-height: 1.5;
 }
 
+.short-about .sidebar-latest-news {
+  color: #8c8c8c;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+}
+
 ul,
 ol {
   font-size: 1em;

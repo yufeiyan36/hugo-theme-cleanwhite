@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div data-pagefind-ignore="all" class="container">
+  <div class="row">
+    <div class="
+      col-lg-8 col-lg-offset-1
+      col-md-8 col-md-offset-1
+      col-sm-12
+      col-xs-12
+      post-container
+    ">
+      {{ $pages := where .Site.RegularPages "Section" "news" }}
+      {{ $paginator := .Paginate ($pages.ByDate.Reverse) 3 }}
+      {{ range $paginator.Pages }}
+      <div class="post-preview">
+        <a href="{{ .Permalink }}">
+          <h2 class="post-title">{{ .Title }}</h2>
+          <div class="post-content-preview">
+            {{ with .Description }}
+              {{ . }}
+            {{ else }}
+              {{ .Summary | plainify }}
+            {{ end }}
+          </div>
+        </a>
+        <p class="post-meta">
+          Posted by {{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}, {{ .Date.Format "January 2006" }}
+        </p>
+      </div>
+      <hr>
+      {{ end }}
+      {{ partial "pagination.html" . }}
+    </div>
+    {{ partial "sidebar.html" . }}
+  </div>
+</div>
+{{ end }}

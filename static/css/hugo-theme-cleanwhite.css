@@ -55,6 +55,30 @@
     margin-top:0;
     margin-bottom:20px
 }
+.notes-student-photo{
+    width:100%;
+    max-width:220px;
+    height:260px;
+    object-fit:cover;
+    border-radius:4px;
+    display:block
+}
+.sidebar-container .short-about .sidebar-latest-news{
+    color:#000;
+    font-weight:700;
+    font-size:1.5em;
+    margin-top:.5em
+}
+.publication-entry .pub-authors,
+.publication-entry .pub-journal{
+    font-size:.9em;
+    color:var(--color-text-muted)
+}
+.section-title{
+    font-size:1.5em;
+    font-weight:700;
+    margin:0 0 .75em
+}
 .sidebar-container .short-about .list-inline>li{
     padding-left:0;
     margin-right:-15px
@@ -453,7 +477,7 @@ pre code{
     font-family:Lora,'Times New Roman',serif;
     font-style:italic;
     font-weight:300;
-    font-size:18px
+    font-size:16px
 }
 .intro-header .post-heading .meta a{
     color:#fff
@@ -466,7 +490,7 @@ pre code{
         font-size:30px
     }
     .intro-header .post-heading .meta{
-        font-size:20px
+        font-size:18px
     }
 }
 .post-preview>a{
@@ -492,7 +516,7 @@ pre code{
 .post-preview>.post-meta>a, .post-preview>.post-meta{
     font-family:Lora,'Times New Roman',serif;
     color:var(--color-text-muted);
-    font-size:17px;
+    font-size:15px;
     font-style:italic;
     margin-top:0
 }

@@ -39,14 +39,14 @@
                             {{ else }}
                                     {{ .Site.Title }}
                             {{ end }} 
-                            on 
-                            {{ .Date.Format "Monday, January 2, 2006" }}
+                            ,
+                            {{ .Date.Format "January 2006" }}
                             {{ if .Site.Params.page_view_counter }}
                                 {{ partial "page_view_counter.html" . }}
                             {{ end }}
                             <!-- Don't show "Last Modified on" if update happened on the same day. -->
                             {{ if (and (not .Lastmod.IsZero) (not (eq (dateFormat "2006-01-02" .Lastmod) (dateFormat "2006-01-02" .Date)))) }}
-                            <br>Last Modified on {{ dateFormat "Monday, January 2, 2006" .Params.LastMod }}
+                            <br>Last Modified: {{ dateFormat "January 2006" .Params.LastMod }}
                             {{ end }}
                         {{ end }}    
                     </span>
@@ -149,10 +149,16 @@
                 {{ if .Site.Params.friends }}
                 <section>
                     <hr>
-                    <h5>FRIENDS</h5>
+                    <h5>Open Postdoc position in the group</h5>
                     <ul class="list-inline">
                         {{ range .Site.Params.friend_link }}
-                        <li><a target="_blank" href="{{.href}}">{{.title}}</a></li>
+                        <li>
+                            {{ if .href }}
+                            <a target="_blank" href="{{.href}}">{{ .title | safeHTML }}</a>
+                            {{ else }}
+                            <span>{{ .title | safeHTML }}</span>
+                            {{ end }}
+                        </li>
                         {{ end }}
                     </ul>
                 </section>

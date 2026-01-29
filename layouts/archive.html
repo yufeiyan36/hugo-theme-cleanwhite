@@ -1,6 +1,4 @@
 {{ define "main" }}
-{{ $pages := (where (where .Site.Pages "Type" "post") "IsPage" true) }}
-
 <div data-pagefind-ignore="all" class="container">
     <div class="row">
    	    <div class="
@@ -11,29 +9,17 @@
             post-container
         ">
             <div class="archive-list">
-                {{ range ($pages.GroupByDate "2006") }}
-                {{ if gt .Key 1 }}
-                    {{ $.Scratch.Set "count" 1 }}
-                    {{ range .Pages  }}
-                        {{ if (eq ($.Scratch.Get "count") 1) }}
-                            {{ $.Scratch.Set "count" 0 }}
-                            <h1 class="title is-4 has-text-weight-normal">{{ .Date.Format "2006" }}</h1>
-                        {{ end }}
-                    {{ end }}
+                <h2 class="section-title">Publications</h2>
 
-                    <ul>
-                    {{ range .Pages }}
-                        <li>
-                            <span>{{ .Date.Format "01/02" }}</span> — 
-                            <a href="{{ .RelPermalink }}">
-                                {{ .Title }}
-                            </a>
-                        </li>
-                    {{ end }}
-                    </ul>
+                <h3 class="title is-5 has-text-weight-normal">2025</h3>
+                <div class="publication-entry">
+                    <div class="pub-date">July 24, 2025</div>
+                    <div class="pub-title"><a href="https://doi.org/10.1021/acs.est.8b06154"><strong>Accumulation of Soil Microbial Necromass Controlled by Microbe–Mineral Interactions</strong></a></div>
+                    <div class="pub-authors"><strong>Qian Zhao</strong>, Sheryl Bell, Ravi Kukkadapu, Jocelyn Richardson, John Cliff, Mark Bowden, Sarah Leichty, and Kirsten S. Hofmockel</div>
+                    <div class="pub-journal">Environmental Science &amp; Technology 2025 59 (33), 17558-17570</div>
+                </div>
 
-                {{ end }}
-                {{ end }}
+                <h3 class="title is-5 has-text-weight-normal">2024</h3>
             </div>
        	</div>
         {{ partial "sidebar.html" . }}

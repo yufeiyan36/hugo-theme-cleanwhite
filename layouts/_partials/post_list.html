@@ -19,6 +19,7 @@
        {{ end }}
         </div>
     </a>
+    {{ if not $.IsHome }}
     <p class="post-meta">
     {{ if .Params.metadata }}
         {{ range $index, $element := .Params.metadata }}
@@ -29,15 +30,22 @@
             {{ end }}
         {{ end }}
     {{ else }}
-        Posted by {{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }} on {{ .Date.Format "Monday, January 2, 2006" }}
+        Posted by {{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}, {{ .Date.Format "January 2006" }}
         <!-- Don't show "Last Modified on" if update happened on the same day. -->
         {{ if (and (not .Lastmod.IsZero) (not (eq (dateFormat "2006-01-02" .Lastmod) (dateFormat "2006-01-02" .Date)))) }}
-            <br>Last Modified on {{ dateFormat "Monday, January 2, 2006" .Params.LastMod }} 
+            <br>Last Modified: {{ dateFormat "January 2006" .Params.LastMod }} 
         {{ end }}
     {{ end }}
     </p>
+    {{ end }}
 
 </div>
 <hr>
 {{ end }}
 </div>
+
+{{ if $.IsHome }}
+<div class="home-image-block">
+    <img src="/img/img1.jpg" alt="home image" style="max-width:100%;height:auto;" />
+</div>
+{{ end }}

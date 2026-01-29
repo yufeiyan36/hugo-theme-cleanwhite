@@ -1,5 +1,6 @@
 
 <!-- Sidebar Container -->
+{{ if or .IsHome .Params.sidebar_image }}
 <div class="
     col-lg-3 col-lg-offset-0
     col-md-3 col-md-offset-0
@@ -7,6 +8,15 @@
     col-xs-12
     sidebar-container
 ">
+    {{ if .Params.sidebar_image }}
+    <section>
+        <div class="short-about">
+            {{ with .Params.sidebar_image }}
+            <img src="{{ . | relURL }}" alt="sidebar image" />
+            {{ end }}
+        </div>
+    </section>
+    {{ else }}
     <!-- Short About -->
 	{{ if .Site.Params.about_me }}
     <section class="visible-md visible-lg">
@@ -18,20 +28,10 @@
             </a>
             {{ end }}
             {{ with .Site.Params.sidebar_about_description }}
-                <p>{{ . | safeHTML }}</p>
+                <p class="sidebar-latest-news">{{ . | safeHTML }}</p>
             {{ end }}
            <!-- SNS Link -->
            <ul class="list-inline">
-               {{ if .Site.Params.social.email }}
-               <li>
-                   <a href="mailto:{{ .Site.Params.social.email }}">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                      </span>
-                   </a>
-               </li>
-               {{ end }}
                {{ with .Site.Params.social.twitter }}
                <li>
                    <a href="{{ . }}">
@@ -108,16 +108,6 @@
                        <span class="fa-stack fa-lg">
                            <i class="fas fa-circle fa-stack-2x"></i>
                            <i class="fab fa-git fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               {{ end }}
-               {{ with .Site.Params.social.linkedin }}
-               <li>
-                   <a target="_blank" href="{{ . }}">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
                        </span>
                    </a>
                </li>
@@ -206,6 +196,7 @@
             </div>
     </section>
 	{{ end }}
+    {{ end }}
     <!-- Bookmarks -->
     {{ if .Site.Params.bookmarks }}
     <section>
@@ -240,10 +231,16 @@
     {{ if .Site.Params.friends }}
     <section>
         <hr class="hidden-sm hidden-xs">
-        <h5>FRIENDS</h5>
+        <h5>Open Postdoc position in the group</h5>
         <ul class="list-inline">
             {{ range .Site.Params.friend_link }}
-            <li><a target="_blank" href="{{.href}}">{{.title}}</a></li>
+            <li>
+                {{ if .href }}
+                <a target="_blank" href="{{.href}}">{{ .title | safeHTML }}</a>
+                {{ else }}
+                <span>{{ .title | safeHTML }}</span>
+                {{ end }}
+            </li>
             {{ end }}
         </ul>
     </section>
@@ -272,4 +269,5 @@
         </ul>
     </section>
     {{ end }}
-</div>
+ </div>
+{{ end }}
