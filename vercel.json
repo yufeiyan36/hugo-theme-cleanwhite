@@ -1,6 +1,6 @@
 {
   "framework": "hugo",
-  "buildCommand": "hugo --source exampleSite --destination exampleSite/public",
+  "buildCommand": "bash scripts/vercel-build.sh",
   "outputDirectory": "exampleSite/public",
   "env": {
     "HUGO_VERSION": "0.152.2"
