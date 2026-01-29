@@ -2,6 +2,10 @@
   "framework": "hugo",
   "buildCommand": "bash -x scripts/vercel-build.sh",
   "outputDirectory": "exampleSite/public",
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/:path*", "destination": "/:path*/index.html" }
+  ],
   "env": {
     "HUGO_VERSION": "0.152.2"
   }
