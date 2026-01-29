@@ -45,19 +45,19 @@ if [[ -n "$BASEURL" ]]; then
   HUGO_DEST="$ROOT_DIR/exampleSite/public"
   hugo --source "$ROOT_DIR/exampleSite" --destination "$HUGO_DEST" --baseURL "$BASEURL"
 else
-    HUGO_DEST="$ROOT_DIR/exampleSite/public"
-    hugo --source "$ROOT_DIR/exampleSite" --destination "$HUGO_DEST"
+  HUGO_DEST="$ROOT_DIR/exampleSite/public"
+  hugo --source "$ROOT_DIR/exampleSite" --destination "$HUGO_DEST"
 fi
 
-  OUTPUT_DIR="${VERCEL_OUTPUT_DIR:-/vercel/output}"
-  mkdir -p "$OUTPUT_DIR/static"
-  cp -a "$HUGO_DEST/." "$OUTPUT_DIR/static/"
+OUTPUT_DIR="${VERCEL_OUTPUT_DIR:-/vercel/output}"
+mkdir -p "$OUTPUT_DIR/static"
+cp -a "$HUGO_DEST/." "$OUTPUT_DIR/static/"
 
-  cat > "$OUTPUT_DIR/config.json" <<'EOF'
-  {
-    "version": 3,
-    "routes": [
-      { "handle": "filesystem" }
-    ]
-  }
-  EOF
+cat > "$OUTPUT_DIR/config.json" <<'EOF'
+{
+  "version": 3,
+  "routes": [
+    { "handle": "filesystem" }
+  ]
+}
+EOF
