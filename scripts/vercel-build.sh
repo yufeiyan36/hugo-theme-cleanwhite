@@ -42,7 +42,13 @@ if [[ -n "${VERCEL_URL:-}" ]]; then
 fi
 
 if [[ -n "$BASEURL" ]]; then
-  hugo --source "$ROOT_DIR/exampleSite" --destination "$ROOT_DIR/exampleSite/public" --baseURL "$BASEURL"
+  HUGO_DEST="$ROOT_DIR/exampleSite/public"
+  hugo --source "$ROOT_DIR/exampleSite" --destination "$HUGO_DEST" --baseURL "$BASEURL"
 else
-  hugo --source "$ROOT_DIR/exampleSite" --destination "$ROOT_DIR/exampleSite/public"
+    HUGO_DEST="$ROOT_DIR/exampleSite/public"
+    hugo --source "$ROOT_DIR/exampleSite" --destination "$HUGO_DEST"
 fi
+
+  OUTPUT_DIR="${VERCEL_OUTPUT_DIR:-$ROOT_DIR/.vercel/output}"
+  mkdir -p "$OUTPUT_DIR/static"
+  cp -a "$HUGO_DEST/." "$OUTPUT_DIR/static/"
