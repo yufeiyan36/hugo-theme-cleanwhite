@@ -11,7 +11,7 @@ layout: page
 		<p>Oluwaseun Adeyemi is a PhD Candidate in the Sustainable Soil Biogeochemistry Lab, whose work focuses on carbon biogeochemical processes at organic-matter and mineral interfaces in terrestrial ecosystems. His research investigates how mineral phases, redox conditions, and environmental gradients influence carbon stabilization, persistence, and cycling in soils.</p>
 	</div>
 	<div class="col-sm-4">
-		<img src="/img/seun2.jpg" alt="Oluwaseun Adeyemi" class="notes-student-photo" />
+		<img src="/img/seun.jpg" alt="Oluwaseun Adeyemi" class="notes-student-photo" />
 	</div>
 </div>
 
