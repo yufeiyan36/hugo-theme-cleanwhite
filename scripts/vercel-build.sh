@@ -46,3 +46,9 @@ if [[ -n "$BASEURL" ]]; then
 else
   hugo --source "$ROOT_DIR/exampleSite" --destination "$ROOT_DIR/exampleSite/public"
 fi
+
+echo "=== build output check ==="
+ls -la "$ROOT_DIR/exampleSite/public" || true
+ls -la "$ROOT_DIR/exampleSite/public/about" || true
+ls -la "$ROOT_DIR/exampleSite/public/notes" || true
+ls -la "$ROOT_DIR/exampleSite/public/research" || true
