@@ -131,7 +131,7 @@ home = ["HTML", "RSS", "Algolia"]
   title =  "RESEARCH"
   href =  "/research/"
   [[params.additional_menus]]
-  title =  "PUBLICATION"
+  title =  "PUBLICATIONS"
   href =  "/archive/"
   [[params.additional_menus]]
   title =  "NEWS"
