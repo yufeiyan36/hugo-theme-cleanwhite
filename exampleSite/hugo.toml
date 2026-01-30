@@ -1,7 +1,7 @@
 baseURL = "https://yufeiyan36.github.io/hugo-theme-cleanwhite/"
 title = "Sustainable Soil Biogeochemistry Lab"
 theme = "hugo-theme-cleanwhite"
-relativeURLs = true
+relativeURLs = false
 canonifyURLs = false
 languageCode = "en-us"
 preserveTaxonomyNames = true

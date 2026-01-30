@@ -11,13 +11,13 @@ layout: page
 		<p>Soil carbon persistence is strongly regulated by interactions between microorganisms and reactive mineral surfaces. Microbial-derived organic matter, particularly necromass, represents a dominant source of mineral-associated organic carbon, yet its accumulation and spatial organization remain poorly understood. Our research examines how mineral reactivity and microbial processes jointly shape the stabilization, heterogeneity, and longevity of mineral-associated organic matter across soils.</p>
 	</div>
 	<div class="col-md-5">
-		<img class="research-img" src="img/mineral1.jpg" alt="Mineral–microbe interactions">
+		<img class="research-img" src="/img/mineral1.jpg" alt="Mineral–microbe interactions">
 	</div>
 </div>
 
 <div class="row research-block">
 	<div class="col-md-5">
-		<img class="research-img" src="img/mineral2.jpg" alt="Root activity and carbon mobilization">
+		<img class="research-img" src="/img/mineral2.jpg" alt="Root activity and carbon mobilization">
 	</div>
 	<div class="col-md-7">
 		<p><strong>Root Activity as a Driver of Carbon Mobilization</strong></p>
@@ -31,7 +31,7 @@ layout: page
 		<p>Hydrological variability, including wet–dry cycles, introduces dynamic redox conditions that transform minerals and regulate carbon accessibility. These fluctuations can destabilize mineral-associated carbon, promote redistribution among soil pools, and influence microbial respiration and greenhouse gas fluxes. Our work explores how environmental drivers interact with biological processes to control the persistence and vulnerability of mineral-associated carbon under changing climate conditions.</p>
 	</div>
 	<div class="col-md-5">
-		<img class="research-img" src="img/mineral3.jpg" alt="Redox-regulated carbon dynamics">
+		<img class="research-img" src="/img/mineral3.jpg" alt="Redox-regulated carbon dynamics">
 	</div>
 </div>
 
