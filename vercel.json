@@ -2,6 +2,7 @@
   "framework": "hugo",
   "buildCommand": "bash -x scripts/vercel-build.sh",
   "outputDirectory": "exampleSite/public",
+  "trailingSlash": true,
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
     { "source": "/:path*", "destination": "/:path*/index.html" }
