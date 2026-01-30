@@ -2,7 +2,8 @@
 layout:     post
 title:      "New Publication by Dr. Qian Zhao"
 subtitle:   ""
-date:       2025-12-02
+date:       2025-08-01
+publishDate: 2025-08-01
 author:     "Sustainable Soil Biogeochemistry Lab"
 image:      "https://img.zhaohuabing.com/post-bg-2015.jpg"
 ---

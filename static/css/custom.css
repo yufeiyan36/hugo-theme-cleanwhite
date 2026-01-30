@@ -171,7 +171,7 @@ h6 {
   width: 100%;
   height: auto;
   display: block;
-  margin: 18px auto 8px;
+  margin: 0 auto 8px;
   border-radius: 6px;
 }
 
@@ -183,7 +183,7 @@ h6 {
 .short-about .sidebar-photo-title {
   font-weight: 700;
   font-size: 1.05em;
-  color: #333;
+  color: #000;
   margin-bottom: 6px;
 }
 
@@ -199,6 +199,7 @@ h6 {
 
 .short-about .sidebar-photo-links a {
   font-weight: 700;
+  color: #000;
 }
 
 .research-block {
