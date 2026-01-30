@@ -167,12 +167,45 @@ h6 {
 }
 
 .short-about .sidebar-photo {
-  max-width: 220px;
+  max-width: 230px;
   width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 12px auto 8px;
   border-radius: 6px;
+}
+
+.short-about .sidebar-photo-meta {
+  text-align: center;
+  margin-top: 4px;
+}
+
+.short-about .sidebar-photo-title {
+  font-weight: 600;
+  font-size: 1.05em;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.short-about .sidebar-photo-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.short-about .sidebar-photo-links li {
+  margin: 4px 0;
+}
+
+.research-block {
+  margin-bottom: 22px;
+}
+
+.research-img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 6px;
 }
 
 ul,
