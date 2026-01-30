@@ -10,9 +10,7 @@ layout: page
 		<p><strong>Mineral–Microbe Controls on Soil Carbon Persistence</strong></p>
 		<p>Soil carbon persistence is strongly regulated by interactions between microorganisms and reactive mineral surfaces. Microbial-derived organic matter, particularly necromass, represents a dominant source of mineral-associated organic carbon, yet its accumulation and spatial organization remain poorly understood. Our research examines how mineral reactivity and microbial processes jointly shape the stabilization, heterogeneity, and longevity of mineral-associated organic matter across soils.</p>
 	</div>
-	<div class="col-md-5">
-		<img class="research-img" src="/img/mineral1.jpg" alt="Mineral–microbe interactions">
-	</div>
+	<div class="col-md-5"></div>
 </div>
 
 <div class="row research-block">
