@@ -213,6 +213,14 @@ h6 {
   margin-top: 6px;
 }
 
+.notes-student-photo {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 ul,
 ol {
   font-size: 1em;
