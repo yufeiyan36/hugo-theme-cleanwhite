@@ -271,9 +271,7 @@
         <hr class="hidden-sm hidden-xs">
         <h5>{{ .Site.Params.last_posts_title | default `LAST POSTS` }}</h5>
         <ul>
-        {{ range ((where (where .Site.Pages "Type" "post") "IsPage" true).Limit (.Site.Params.last_posts_count | default 5 | int)) }}
-            <li><a href="{{ .RelPermalink }}">{{.Title}}</a></li>
-        {{ end }}
+            <li><a href="/archive/">Accumulation of Soil Microbial Necromass Controlled by Microbe–Mineral Interactions</a></li>
         </ul>
     </section>
     {{ end }}
