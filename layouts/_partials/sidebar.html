@@ -12,7 +12,7 @@
     <section>
         <div class="short-about">
             {{ with .Params.sidebar_image }}
-            <img src="{{ . | relURL }}" alt="sidebar image" />
+            <img class="sidebar-photo" src="{{ . | relURL }}" alt="sidebar image" />
             {{ end }}
         </div>
     </section>
@@ -228,7 +228,7 @@
     {{ end }}
 
     <!-- Friends Blog -->
-    {{ if .Site.Params.friends }}
+    {{ if and .Site.Params.friends (not .Params.sidebar_image) }}
     <section>
         <hr class="hidden-sm hidden-xs">
         <h5>Open Postdoc position in the group</h5>
@@ -258,7 +258,7 @@
         </div>
     </section>
     {{ end }}
-    {{ if .Site.Params.last_posts }}
+    {{ if and .Site.Params.last_posts (not .Params.sidebar_image) }}
     <section>
         <hr class="hidden-sm hidden-xs">
         <h5>{{ .Site.Params.last_posts_title | default `LAST POSTS` }}</h5>

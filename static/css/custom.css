@@ -166,6 +166,15 @@ h6 {
   margin-top: 0.5em;
 }
 
+.short-about .sidebar-photo {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
 ul,
 ol {
   font-size: 1em;

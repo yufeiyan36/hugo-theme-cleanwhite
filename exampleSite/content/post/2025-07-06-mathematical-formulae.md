@@ -23,6 +23,4 @@ the equation:
 the included `\pu` command, pretty looking physical units can be written with
 ease, too. The following code sample produces two text lines with four numbers
 Oluwaseun Adeyemi delivered an oral presentation at the AGU Fall Meeting 2025, presenting our group’s research on soil biogeochemistry and mineral-associated organic matter.
-
-Posted by Sustainable Soil Biogeochemistry Lab, December 2025.
 `mhchem` documentation.

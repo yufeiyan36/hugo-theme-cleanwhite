@@ -6,11 +6,11 @@ sidebar_image: "img/zhaoqian.jpg"
 ---
 
 <h2 class="section-title">PI</h2>
-**_Dr.Qian Zhao_** is an Assistant Professor in the Department of Sustainable Earth Systems Sciences at The University of Texas at Dallas. His research focuses on soil carbon biogeochemistry, with particular emphasis on the mechanisms controlling carbon persistence and vulnerability in terrestrial ecosystems under changing environmental conditions. He investigates biogeochemical processes occurring at organic matter–mineral–microorganism interfaces across molecular to landscape scales, aiming to improve mechanistic understanding of soil carbon stabilization and mobilization in the Earth system.
+**_Dr. Qian Zhao_** is an Assistant Professor in the Department of Sustainable Earth Systems Sciences at The University of Texas at Dallas. His research focuses on soil carbon biogeochemistry, with particular emphasis on the mechanisms controlling carbon persistence and vulnerability in terrestrial ecosystems under changing environmental conditions. He investigates biogeochemical processes occurring at organic matter–mineral–microorganism interfaces across molecular to landscape scales, aiming to improve mechanistic understanding of soil carbon stabilization and mobilization in the Earth system.
 
 His work highlights the critical role of organo-mineral interactions—especially carbon associated with iron (Fe) oxides—in regulating soil carbon stability. His research further examines how redox dynamics, nutrient inputs, and microbial processes influence the fate of mineral-bound carbon, with implications for global carbon cycling, ecosystem sustainability, and climate change mitigation.
 
-Feel free to connect Dr.Qian Zhao by [writing him an email](mailto:Qian.Zhao@UTDallas.edu). 
+Feel free to connect Dr. Qian Zhao by [writing him an email](mailto:Qian.Zhao@UTDallas.edu). 
 
 
 ## Education
