@@ -11,7 +11,7 @@ layout: page
 		<p>I am a PhD student in</p>
 	</div>
 	<div class="col-sm-4">
-		<img src="/img/seun.jpg" alt="Oluwaseun Adeyemi" class="notes-student-photo" />
+		<img src="/img/seun2.jpg" alt="Oluwaseun Adeyemi" class="notes-student-photo" />
 	</div>
 </div>
 
